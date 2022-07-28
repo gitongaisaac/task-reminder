@@ -1,0 +1,34 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "task": "Attend CEO meeting",
+      "time": "at 9:00am",
+      "details": "A meeting to discuss about our stock value on the stock market"
+    },
+    {
+      "id": 2,
+      "task": "Sell the source stock",
+      "time": "at 4:00pm",
+      "details": ""
+    },
+    {
+      "id": 3,
+      "task": "Send out emails to the group",
+      "time": "at 1:00pm",
+      "details": "All members should receive the email and the members who own preferred stock should receive dividends together with the emails"
+    },
+    {
+      "task": "Visit Mom",
+      "time": "4th July",
+      "details": "Arrange the party.",
+      "id": 8
+    },
+    {
+      "task": "Visit the school",
+      "time": "at 4:00 pm",
+      "details": "Check which grades have not been entered.",
+      "id": 9
+    }
+  ]
+}
