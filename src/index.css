@@ -30,6 +30,24 @@
   --grey-700: #475569;
   --grey-800: #344256;
   --grey-900: #1e293b;
+
+  --complement-10: #fbfbfb;
+  --complement-20: #f8f6f7;
+  --complement-30: #f4f2f3;
+  --complement-40: #f0edef;
+  --complement-50: #ede9ec;
+  --complement-60: #e9e4e8;
+  --complement-70: #e5e0e4;
+  --complement-80: #e1dbe0;
+  --complement-90: #ded7dc;
+
+  --shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
 * {
@@ -45,8 +63,16 @@ a {
   color: var(--grey-900);
 }
 
+ul {
+  list-style-type: none;
+}
+
 .hide {
   display: none;
+}
+
+.disabled {
+  pointer-events: none;
 }
 
 .container {
@@ -55,6 +81,7 @@ a {
   padding: 40px;
   border: 1px solid var(--stroke-300);
   border-radius: 5px;
+  background-color: var(--complement-10);
 }
 
 .navbar {
@@ -103,14 +130,23 @@ a {
 }
 
 .task-list {
-  background-color: var(--faded-200);
+  /* background-color: var(--complement-20); */
+  background-color: #fff;
   padding: 10px 10px;
   margin-bottom: 20px;
-  border: 1px solid var(--stroke-200);
+  /* border: 1px solid var(--complement-60); */
   border-radius: 5px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  box-shadow: var(--shadow-2);
+  transition: 0.3s;
+}
+
+.task-list:hover {
+  box-shadow: var(--shadow-3);
+  background-color: var(--faded-200);
+  cursor: default;
 }
 
 .task-list h3 {
@@ -182,10 +218,54 @@ a {
   outline: none;
 }
 
+.details {
+  margin: 2rem auto;
+}
+
+.details .time {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 13px;
+  color: var(--stroke-600);
+}
+
+.details .task {
+  color: var(--faded-500);
+  border-bottom: 2px solid var(--faded-600);
+  margin-bottom: 5px;
+  font-weight: 400;
+}
+
+.about {
+  margin: 2rem auto;
+}
+
+.about h2 {
+  margin-bottom: 12px;
+  color: var(--faded-600);
+}
+
+.about strong {
+  font-weight: 500;
+}
+
 .footer {
   text-align: center;
+  background-color: var(--complement-90);
+  padding: 20px;
+}
+
+.foot-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
 }
 
 .footer a:hover {
   color: var(--faded-500);
+}
+
+.not-found {
+  margin: 2rem auto;
 }

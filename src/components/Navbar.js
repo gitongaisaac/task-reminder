@@ -3,7 +3,7 @@ const Navbar = () => {
     <div className="navbar">
       <div className="title">
         <h1>
-          Task <span className="">Reminder</span>
+          Pro <span>Snooze</span>
         </h1>
       </div>
       <button
